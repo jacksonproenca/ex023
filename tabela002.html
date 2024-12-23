@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -30,12 +31,29 @@
             color: white;
         }
 
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         td.num {
             text-align: right;
         }
         caption {
             font-size: 1.5em;
-            font-weight: ;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -46,8 +64,8 @@
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -158,11 +176,16 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212.583.720</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magni dolor consectetur ipsam ullam pariatur enim commodi et aliquid. Minus libero eum error esse iste aliquid, necessitatibus mollitia porro culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas ipsam aliquam, explicabo hic recusandae, fugit ea tempore quae voluptatibus beatae at. Quaerat enim ea similique minus ipsum exercitationem. Magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae asperiores earum minus! Quibusdam unde tempore facilis, debitis laborum voluptates modi in accusantium repellat aut earum eligendi voluptatibus blanditiis incidunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non unde tempora mollitia veniam nobis doloremque explicabo rerum incidunt deleniti libero numquam, accusantium est corporis voluptas dolore porro! Aspernatur, maiores repudiandae.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magni dolor consectetur ipsam ullam pariatur enim commodi et aliquid. Minus libero eum error esse iste aliquid, necessitatibus mollitia porro culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas ipsam aliquam, explicabo hic recusandae, fugit ea tempore quae voluptatibus beatae at. Quaerat enim ea similique minus ipsum exercitationem. Magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae asperiores earum minus! Quibusdam unde tempore facilis, debitis laborum voluptates modi in accusantium repellat aut earum eligendi voluptatibus blanditiis incidunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non unde tempora mollitia veniam nobis doloremque explicabo rerum incidunt deleniti libero numquam, accusantium est corporis voluptas dolore porro! Aspernatur, maiores repudiandae.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magni dolor consectetur ipsam ullam pariatur enim commodi et aliquid. Minus libero eum error esse iste aliquid, necessitatibus mollitia porro culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas ipsam aliquam, explicabo hic recusandae, fugit ea tempore quae voluptatibus beatae at. Quaerat enim ea similique minus ipsum exercitationem. Magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae asperiores earum minus! Quibusdam unde tempore facilis, debitis laborum voluptates modi in accusantium repellat aut earum eligendi voluptatibus blanditiis incidunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non unde tempora mollitia veniam nobis doloremque explicabo rerum incidunt deleniti libero numquam, accusantium est corporis voluptas dolore porro! Aspernatur, maiores repudiandae.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magni dolor consectetur ipsam ullam pariatur enim commodi et aliquid. Minus libero eum error esse iste aliquid, necessitatibus mollitia porro culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas ipsam aliquam, explicabo hic recusandae, fugit ea tempore quae voluptatibus beatae at. Quaerat enim ea similique minus ipsum exercitationem. Magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae asperiores earum minus! Quibusdam unde tempore facilis, debitis laborum voluptates modi in accusantium repellat aut earum eligendi voluptatibus blanditiis incidunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non unde tempora mollitia veniam nobis doloremque explicabo rerum incidunt deleniti libero numquam, accusantium est corporis voluptas dolore porro! Aspernatur, maiores repudiandae.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione magni dolor consectetur ipsam ullam pariatur enim commodi et aliquid. Minus libero eum error esse iste aliquid, necessitatibus mollitia porro culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptas ipsam aliquam, explicabo hic recusandae, fugit ea tempore quae voluptatibus beatae at. Quaerat enim ea similique minus ipsum exercitationem. Magni! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae asperiores earum minus! Quibusdam unde tempore facilis, debitis laborum voluptates modi in accusantium repellat aut earum eligendi voluptatibus blanditiis incidunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non unde tempora mollitia veniam nobis doloremque explicabo rerum incidunt deleniti libero numquam, accusantium est corporis voluptas dolore porro! Aspernatur, maiores repudiandae.</p>
     
 </body>
 </html>
